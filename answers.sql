@@ -10,7 +10,7 @@ BEGIN
     SELECT COUNT(*)
     INTO v_count
     FROM Student
-    WHERE Student.DepartmentID = DepartmentID;
+    WHERE Student.DepartmentID = count_students.DepartmentID;
 
     RETURN v_count;
 END;
